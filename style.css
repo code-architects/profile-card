@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    /* background: rgb(255, 18, 109); */
+    background: rgb(255,18,109);
+    color: #fff;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(45, 51, 56);
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 320px;
+    height: 350px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.2);
+    position: relative;
+}
+.profilepic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+.profilepic:hover {
+    border: 5px solid rgb(255,18,109);
+}
+.title {
+    margin-top: 70px;
+    font-size: 32px;
+    text-align: center;
+}
+.tag {
+    text-align: center;
+    font-size: 14px;
+}
+.desc {
+    padding: 20px;
+    padding-top: 24px;
+    font-size: 18px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    background: rgb(255,18,109);
+}
+.footer a {
+    color: #fff;
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    transition: 0.1s;
+}
+.footer a:hover{
+    border-radius: 50%;
+    background: #FFf;
+    color: rgb(255,18,109);
+}
